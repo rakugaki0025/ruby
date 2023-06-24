@@ -38,3 +38,12 @@ end
 
 Car.run(10)                              # run(引数), 10キロ走る。
 
+# クラスメソッド
+class Car                                # 定義
+  def self.turn(direction)               # 
+    puts "#{direction}に曲がります。"    # 文字列,ダブル
+  end
+end                                      # 終了
+
+Car.turn("右")                           # directionに代入
+
