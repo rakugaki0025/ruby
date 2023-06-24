@@ -7,7 +7,7 @@ class Car                                # 定義,始まり class?
   end
   
   def turn(direction)                    # 文章の代入する項目(変更するところ)
-    puts "#{direction}に曲がります。"    # 文字列,ダブル
+    puts "#{direction}に曲がります。"    # 文字列,ダブル,出力
                                          # direction(方向)
                                          # 補足, 定義する文章
   end
@@ -30,20 +30,20 @@ car.move("右",5)                         # 文字列,ダブル
                                          # run(distance)
 
 # クラスメソッド
-class Car                                # 
+class Car                                # 始
   def self.run(distance)                 # self.run = Car.run である
     puts "車で#{distance}キロ走ります。" # 文字列,ダブル
-  end                                    # 
+  end                                    # 終
 end
 
 Car.run(10)                              # run(引数), 10キロ走る。
 
 # クラスメソッド
-class Car                                # 定義
+class Car                                # 始
   def self.turn(direction)               # 
     puts "#{direction}に曲がります。"    # 文字列,ダブル
   end
-end                                      # 終了
+end                                      # 終
 
 Car.turn("右")                           # directionに代入
 
